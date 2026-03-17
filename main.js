@@ -1,25 +1,25 @@
 function compute_kwh() {
 
-    let usage = Number(document.getElementById("kwh_input").value);
+    let kwh_input = Number(document.getElementById("kwh_input").value);
 
     switch (true) {
-        case (usage >= 0 && usage <= 100):
+        case (kwh_input >= 0 && kwh_input <= 100):
             alert("Very Low Consumer");
             break;
 
-        case (usage >= 101 && usage <= 200):
+        case (kwh_input >= 101 && kwh_input <= 200):
             alert("Low Consumption");
             break;
 
-        case (usage >= 201 && usage <= 300):
+        case (kwh_input >= 201 && kwh_input <= 300):
             alert("Average consumer");
             break;
 
-        case (usage >= 301 && usage <= 500):
+        case (kwh_input >= 301 && kwh_input <= 500):
             alert("High consumer");
             break;
 
-        case (usage > 500):
+        case (kwh_input > 500):
             alert("Very High Consumer");
             break;
 
